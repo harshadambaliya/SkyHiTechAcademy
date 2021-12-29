@@ -1,0 +1,388 @@
+/******************** Defult Start *******************/
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('../webfonts/DroidSerif-BoldItalic.woff2') format('woff2'), url('../webfonts/DroidSerif-BoldItalic.woff') format('woff'), url('../webfonts/DroidSerif-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('../webfonts/DroidSerif.woff2') format('woff2'), url('../webfonts/DroidSerif.woff') format('woff'), url('../webfonts/DroidSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('../webfonts/DroidSerif-Italic.woff2') format('woff2'), url('../webfonts/DroidSerif-Italic.woff') format('woff'), url('../webfonts/DroidSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('../webfonts/DroidSerif-Bold.woff2') format('woff2'), url('../webfonts/DroidSerif-Bold.woff') format('woff'), url('../webfonts/DroidSerif-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+.shta-site {
+    font-family: 'Montserrat', sans-serif;
+    color: #5f727f;
+}
+
+.shta-section-title {
+    white-space: normal;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #3c3950;
+    letter-spacing: .05em;
+}
+
+.shta-section-subtitle {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+    color: rgb(72, 196, 212);
+}
+
+.btn {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 15px 40px;
+    box-shadow: rgb(153 153 153) 0px 0px 0px 0px;
+}
+
+.btn-primary {
+    background-color: rgb(231, 255, 137);
+    border-color: rgb(231, 255, 137);
+    color: rgb(32, 35, 47);
+}
+
+.btn i {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+
+/******************** Defult End *******************/
+
+
+/******************** Header Start *******************/
+
+.shta-site-header {
+    background-color: #ebecee;
+    padding-bottom: 80px;
+    padding-top: 40px;
+}
+
+.navbar {
+    z-index: 100;
+}
+
+.navbar-brand img {
+    filter: brightness(100);
+}
+
+.navbar .nav-link {
+    padding: 33px 18px !important;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #00bcd4;
+}
+
+
+/******************** Header End *******************/
+
+
+/******************** Home Page Start *******************/
+
+
+/* Landing Section Start */
+
+.shta-landing-section {
+    margin-top: -227px;
+}
+
+.shta-landing-slide-content .shta-section-title {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 0;
+}
+
+.shta-landing-content .shta-section-subtitle {
+    margin-bottom: 70px;
+}
+
+.shta-landing-slide:before {
+    content: "";
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 7% 10%);
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.shta-landing-slide-img {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 7% 10%);
+}
+
+.shta-landing-slide-img img {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    height: 740px;
+}
+
+.shta-landing-slide {
+    position: relative;
+}
+
+.shta-landing-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.shta-landing-slide-img:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(95% 0, 100% 0, 100% 100%, 70% 100%);
+}
+
+.shta-landing-slide-img:before {
+    content: "";
+    width: 5px;
+    height: 70%;
+    background-color: rgb(231, 255, 137);
+    position: absolute;
+    bottom: 0;
+    right: calc(22% - 10px);
+    transform: skewX( -27deg);
+}
+
+.shat-partner-card {
+    display: flex;
+    align-items: flex-start;
+    width: 330px;
+    max-width: 100%;
+}
+
+.shat-partner-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.shat-partner-card-body {
+    width: calc(100% - 90px);
+}
+
+.shat-partner-name {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.shat-partner-designation {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+.shat-partner-description {
+    white-space: normal;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: "Droid Serif";
+    font-style: italic;
+}
+
+.shat-partner-sign {
+    text-align: right;
+}
+
+.shat-partner-details {
+    display: flex;
+    align-items: center;
+}
+
+.shta-landing-btn {
+    margin-left: 30%;
+}
+
+
+/* Landing Section End */
+
+
+/* wHO wE Section Start */
+
+.shta-who-are-section {
+    position: relative;
+    padding: 200px 0 290px;
+}
+
+.shta-who-are-section>img {
+    clip-path: polygon(75% 0, 100% 0%, 100% 100%, 45% 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shta-who-are-content .shta-section-title {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.shta-who-are-content .shta-section-title:before {
+    content: "";
+    border-top: 1px solid #53c7d6;
+    width: 100px;
+    top: calc(100% + 20px);
+    left: 0;
+    position: absolute;
+}
+
+.shta-section-label {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 20px;
+    width: 370px;
+    max-width: 100%;
+}
+
+.shta-section-description {
+    font-family: source sans pro;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+
+/* wHO wE Section End */
+
+
+/* Our Service Section Start */
+
+.our-service-section {
+    margin-top: -100px;
+    position: relative;
+}
+
+.our-service-content {
+    padding: 100px;
+    background-color: #31c5d9;
+}
+
+.our-service-heading .shta-section-title {
+    color: #e7ff89;
+}
+
+.our-service-heading .shta-section-description {
+    color: #ffffff;
+}
+
+.our-service-heading {
+    margin-bottom: 20px;
+}
+
+.our-service-card {
+    margin-top: 100px;
+}
+
+.our-service-img {
+    margin-bottom: 30px;
+}
+
+.our-service-img img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.our-service-card-title {
+    font-size: 19px;
+    line-height: 38px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+}
+
+.our-service-card-description {
+    margin-top: 14px;
+    color: #fff;
+    font-family: source sans pro;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.our-service-card-link {
+    text-decoration: none;
+}
+
+.our-service-card-link:hover .our-service-card-title {
+    color: #e7ff89;
+}
+
+
+/* Our Service Section End */
+
+
+/******************** Home Page End *******************/
+
+
+/******************** Responsive Start *******************/
+
+@media (min-width: 1212px) {
+    .container {
+        width: 1212px;
+    }
+}
+
+
+/******************** Responsive End *******************/
