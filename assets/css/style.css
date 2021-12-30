@@ -32,6 +32,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Hey Haters';
+    src: url('../webfonts/HeyHaters.woff2') format('woff2'), url('../webfonts/HeyHaters.woff') format('woff'), url('../webfonts/HeyHaters.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 .shta-site {
@@ -67,7 +75,7 @@
 .btn-primary {
     background-color: rgb(231, 255, 137);
     border-color: rgb(231, 255, 137);
-    color: rgb(32, 35, 47);
+    color: #20232f;
 }
 
 .btn i {
@@ -77,6 +85,16 @@
 a {
     text-decoration: none;
     transition: all ease-in-out 0.3s;
+}
+
+.btn-info {
+    background-color: #48c4d4;
+    color: #ffffff;
+}
+
+.btn-info:hover {
+    background-color: #20232f;
+    color: #ffffff;
 }
 
 
@@ -314,6 +332,8 @@ a {
 .our-service-content {
     padding: 100px;
     background-color: #31c5d9;
+    position: relative;
+    z-index: 5;
 }
 
 .our-service-heading .shta-section-title {
@@ -371,6 +391,330 @@ a {
 
 
 /* Our Service Section End */
+
+
+/* Our Service Section Start */
+
+.shta-last-project-section {
+    padding-top: 290px;
+    padding-bottom: 200px;
+    margin-top: -180px;
+    position: relative;
+    z-index: 1;
+}
+
+.shta-last-project-section:before {
+    content: "";
+    background-color: #eeeff1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    z-index: -1;
+}
+
+.shta-last-project-content .shta-section-title {
+    color: #20232f;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.shta-last-project-content .shta-section-description {
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #9b9c9c;
+    width: 580px;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.shta-last-project-img-content {
+    width: 650px;
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    max-width: 100%;
+}
+
+.shta-last-project-img-frame {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.shta-last-project-img {
+    width: calc(100% - 90px);
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    display: block;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+/* Our Service Section End */
+
+
+/* Look Great Section Start */
+
+.shta-look-great-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.shta-look-great-section {
+    padding-top: 350px;
+    padding-bottom: 70px;
+}
+
+.shta-look-great-content .shta-section-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 37px;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.shta-look-great-content .shta-section-description {
+    color: #838383;
+    max-width: 604px;
+    display: block;
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.shta-look-great-section:before {
+    content: "";
+    background-color: #4bccdd;
+    width: 60%;
+    height: 85px;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(to right, #4BCCDD, #7CDEC7);
+}
+
+.shta-look-great-img {
+    position: relative;
+    z-index: 10;
+}
+
+.shta-look-great-title {
+    font-family: 'Hey Haters';
+    font-size: 400px;
+    opacity: 0.02;
+    position: absolute;
+    z-index: -1;
+    transform: rotate( -15deg);
+    top: 0;
+    left: 150px;
+}
+
+.shta-look-great-card {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.shta-look-great-card-body {
+    background-image: linear-gradient(to bottom right, rgba(7, 188, 216, 0.75) 0%, rgba(40, 214, 174, 0.75) 100%);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all ease-in-out 0.3s;
+}
+
+.shta-look-great-footer h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0;
+    letter-spacing: .05em;
+}
+
+.shta-look-great-header a {
+    font-size: 32px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.shta-look-great-header {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 15px;
+}
+
+.shta-look-great-card:hover .shta-look-great-card-body {
+    transform: scale(1);
+    border-radius: 0;
+}
+
+.shta-share-media-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+.shta-share-media-item {
+    margin-right: 10px;
+}
+
+.shta-share-media-link {
+    color: #fff;
+}
+
+.shta-share-media-link:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+/* Look Great Section End */
+
+
+/* Team Winner Section Start */
+
+.shta-team-winner-card {
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+
+.shta-team-winner-name {
+    color: #20232f;
+    line-height: 30px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.shta-team-winner-img {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.shta-team-winner-img:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    bottom: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.shta-team-winner-designation {
+    color: #5f727f;
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.shta-team-winner-description {
+    color: #5f727f;
+    line-height: 25px;
+    font-size: 16px;
+    font-family: source sans pro;
+}
+
+.shta-team-winner-description {
+    color: #5f727f;
+    line-height: 25px;
+    font-size: 16px;
+    font-family: source sans pro;
+    padding: 0 60px;
+    margin-bottom: 70px;
+}
+
+.shta-team-winner-section .shta-section-title {
+    color: #20232f;
+}
+
+.shta-team-winner-section .shta-section-description {
+    color: #838383;
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: source sans pro;
+    margin-bottom: 100px;
+}
+
+.shta-team-winner-section {
+    position: relative;
+    padding-top: 170px;
+}
+
+.shta-team-winner-section:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeff1;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    top: 0;
+    z-index: -1;
+}
+
+
+/* Team Winner Section End */
+
+
+/* Came Far Section Start */
+
+.shta-came-far-section {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.shta-came-far-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeff1;
+    clip-path: polygon(100% 0, 100% 30%, 55% 100%, 0 100%, 0 0);
+    z-index: -1;
+}
+
+.shta-came-far-section .shta-section-title {
+    color: #20232f;
+    margin-bottom: 50px;
+}
+
+.shta-came-far-section .shta-section-description {
+    color: #9b9c9c;
+    display: block;
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+/* Came Far Section End */
 
 
 /******************** Home Page End *******************/
