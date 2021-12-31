@@ -97,6 +97,31 @@ a {
     color: #ffffff;
 }
 
+.form-control,
+.form-select {
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #b7b7b7;
+    background-color: transparent;
+    padding: 12px;
+    padding-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-control::placeholder,
+.form-select {
+    color: #a9a9bc;
+}
+
+.btn:active,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+}
+
 
 /******************** Defult End *******************/
 
@@ -257,6 +282,10 @@ a {
     text-align: right;
 }
 
+.shat-partner-sign img {
+    margin-left: auto;
+}
+
 .shat-partner-details {
     display: flex;
     align-items: center;
@@ -285,6 +314,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
 .shta-who-are-content .shta-section-title {
@@ -312,7 +342,7 @@ a {
 }
 
 .shta-section-description {
-    font-family: source sans pro;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
@@ -375,7 +405,7 @@ a {
 .our-service-card-description {
     margin-top: 14px;
     color: #fff;
-    font-family: source sans pro;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     line-height: 25px;
     margin-bottom: 0;
@@ -387,6 +417,15 @@ a {
 
 .our-service-card-link:hover .our-service-card-title {
     color: #e7ff89;
+}
+
+.shta-testimonial-img img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
 }
 
 
@@ -713,11 +752,383 @@ a {
     font-weight: 300;
 }
 
+.shta-came-far-img {
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+}
+
 
 /* Came Far Section End */
 
 
+/* Comapany Work Section Start */
+
+.shta-comapany-work {
+    background-image: url(../images/comapany-work-img.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 125px 0 350px;
+}
+
+.shta-comapany-work-img {
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shta-comapany-work-title {
+    font-size: 36px;
+    color: #fff;
+    line-height: 69px;
+    font-weight: 700;
+    letter-spacing: 0.10rem;
+}
+
+.shta-comapany-work-label {
+    font-size: 24px;
+    color: #fff;
+    line-height: 37px;
+    font-weight: 300;
+    font-family: source sans pro;
+}
+
+.shta-comapany-work .col {
+    position: relative;
+}
+
+.shta-comapany-work .col:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: #e5fd87;
+    top: 0;
+    right: 0;
+    transform: rotate( 15deg);
+}
+
+.shta-comapany-work .col:last-child::after {
+    display: none;
+}
+
+
+/* Comapany Work Section End */
+
+
+/* Awesome Client Section Start */
+
+.shta-awesome-client-section {
+    background-color: #eeeff1;
+}
+
+.shta-awesome-client-content {
+    padding: 75px 20px 35px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgb(0 0 0 / 20%);
+    text-align: center;
+    top: -200px;
+    position: relative;
+}
+
+.shta-awesome-client-content .shta-section-title {
+    color: #20232f;
+}
+
+.shta-awesome-client-content .shta-section-description {
+    width: 690px;
+    margin: 0 auto;
+    max-width: 100%;
+    font-weight: 400;
+    font-family: source sans pro;
+    margin-bottom: 20px;
+}
+
+.shta-awesome-clients-logo {
+    margin-bottom: 60px;
+}
+
+.shta-awesome-clientsling:hover {
+    opacity: 0.7;
+}
+
+
+/* Awesome Client Section End */
+
+
+/* Awesome Client Section Start */
+
+.shta-testimonial-section {
+    padding: 250px 0 130px;
+    background-image: url(../images/testimonial-back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    margin-top: -300px;
+}
+
+.shta-testimonial-card {
+    color: #fff;
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.shta-testimonial-img {
+    margin-bottom: 35px;
+}
+
+.shta-testimonial-name {
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.shta-testimonial-designation {
+    font-size: 14px;
+}
+
+.shta-testimonial-description {
+    font-size: 32px;
+    font-weight: 300;
+    font-family: source sans pro;
+    line-height: 1.2;
+}
+
+
+/* Awesome Client Section End */
+
+
+/* Make Something Section Start */
+
+.shta-make-something-section {
+    padding: 80px 0 40px;
+}
+
+.shta-make-something-content {
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.shta-make-something-content .shta-section-title {
+    color: #48c4d4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.shta-make-something-content .shta-section-description {
+    color: #838282;
+    text-align: center;
+    font-weight: 400;
+    width: 690px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.shta-make-something-form .btn {
+    padding: 9px 40px;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding: 10px 50px;
+    font-size: 20px;
+    box-shadow: 0 12px 40px rgb(72 196 212 / 30%);
+}
+
+
+/* Make Something Section End */
+
+
 /******************** Home Page End *******************/
+
+
+/******************** Site Footer Start *******************/
+
+.shta-site-footer-top {
+    position: relative;
+    z-index: 1;
+}
+
+.shta-site-footer-top::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #3E4B53;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.shta-site-footer-top {
+    position: relative;
+    z-index: 1;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.shta-footer-description {
+    margin-bottom: 0;
+    width: 350px;
+    max-width: 100%;
+}
+
+.shta-footer-contact-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.shta-footer-contact-item {
+    margin-bottom: 10px;
+}
+
+.shta-site-footer-bottom {
+    position: relative;
+    z-index: 1;
+    margin-top: -130px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.shta-site-footer-bottom::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #565D63;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.shta-footer-bottom-title {
+    color: #00bcd4;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 19px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.shta-footer-bottom-contact {
+    display: flex;
+    align-items: flex-start;
+    width: 360px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.shta-footer-bottom-contact img {
+    margin-right: 30px;
+    width: 50px;
+    margin-top: 15px;
+}
+
+.shta-footer-menu-list {
+    padding: 0;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+.shta-footer-menu-item {
+    margin-bottom: 5px;
+}
+
+.shta-footer-menu-link {
+    color: #fff;
+    font-size: 14px;
+}
+
+.shta-site-copyright-text,
+.shta-footer-contact-address {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.shta-footer-contact-address {
+    margin-bottom: 50px;
+}
+
+.shta-site-copyright-text {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.shta-site-footer-info {
+    background-color: #181828;
+    padding: 40px 0;
+}
+
+.shta-site-footer-info__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shta-footer-social-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.shta-footer-info-text {
+    color: #99a9b5;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.shta-footer-social-link {
+    padding: 0 5px;
+    color: #fff;
+}
+
+.facebook {
+    color: #4e64b5;
+}
+
+.linkedin {
+    color: #0288d1;
+}
+
+.twitter {
+    color: #00aced;
+}
+
+.instagram {
+    color: #9a8f62;
+}
+
+.pinterest {
+    color: #ff5757;
+}
+
+.google {
+    color: #f44336;
+}
+
+.youtube {
+    color: #c82929;
+}
+
+.shta-footer-social-link:hover {
+    color: #fff;
+}
+
+
+/******************** Site Footer End *******************/
 
 
 /******************** Responsive Start *******************/
@@ -725,6 +1136,290 @@ a {
 @media (min-width: 1212px) {
     .container {
         width: 1212px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar>.container-fluid {
+        flex-direction: column;
+    }
+    .shta-landing-section {
+        margin-top: -275px;
+    }
+    .shta-landing-slide-content .shta-section-title {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .shta-landing-btn {
+        margin-left: 10%;
+    }
+    .shta-who-are-section {
+        padding: 110px 0 150px;
+    }
+    .our-service-section .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .shta-last-project-img-content {
+        width: 500px;
+        bottom: 90px;
+    }
+    .shta-last-project-img {
+        width: calc(100% - 80px);
+    }
+    .shta-look-great-section {
+        padding-top: 120px;
+    }
+    .shta-look-great-img img {
+        width: 100%;
+    }
+    .shta-look-great-img img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    .shta-look-great-title {
+        font-size: 320px;
+        top: -90px;
+        left: 0;
+    }
+    .shta-look-great-section:before {
+        width: 100%;
+    }
+    .shta-team-winner-card {
+        margin-bottom: 30px;
+    }
+    .shta-came-far-img {
+        display: none;
+    }
+    .shta-comapany-work .col:after {
+        display: none;
+    }
+    .shta-awesome-client-content {
+        top: 0;
+    }
+    .shta-awesome-client-section .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .shta-testimonial-section {
+        margin-top: 0;
+    }
+    .shta-make-something-content {
+        width: 100%;
+    }
+    .shta-comapany-work {
+        padding: 100px 0 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .shta-site-header {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    .navbar>.container-fluid {
+        flex-direction: row;
+    }
+    .shta-landing-section {
+        margin-top: -113px;
+    }
+    .shta-landing-slide:before {
+        clip-path: unset;
+    }
+    .shta-landing-slide-img {
+        clip-path: unset;
+    }
+    .shta-landing-slide-content {
+        left: 0;
+    }
+    .shta-landing-content .shta-section-subtitle,
+    .shta-landing-slide-content .shta-section-title {
+        width: 70%;
+        margin-top: 0;
+    }
+    .shat-partner-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shat-partner-card-body {
+        position: relative;
+    }
+    .shat-partner-sign {
+        position: absolute;
+        left: calc(100% + 50px);
+        top: 20px;
+        width: 140px;
+    }
+    .shta-landing-slide-img:after {
+        clip-path: polygon(100% 85%, 100% 0, 100% 100%, 85% 100%);
+    }
+    .shta-landing-slide-img:before {
+        height: 15%;
+        right: calc(7% + 5px);
+        transform: skewX( -46deg);
+    }
+    .our-service-content {
+        padding: 30px;
+    }
+    .our-service-card {
+        margin-top: 50px;
+    }
+    .shta-last-project-img-content {
+        width: 430px;
+        bottom: 10px;
+    }
+    .shta-last-project-img {
+        width: calc(100% - 65px);
+    }
+    .shta-section-title {
+        font-size: 27px;
+        line-height: 45px;
+    }
+    .shta-team-winner-section:before {
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    }
+    .shta-came-far-section {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    .shta-came-far-section::before {
+        clip-path: polygon(100% 0, 100% 65%, 55% 100%, 0 100%, 0 0);
+    }
+    .shta-came-far-section .shta-section-title {
+        margin-bottom: 20px;
+    }
+    .shta-testimonial-section {
+        padding: 100px 0;
+    }
+    .shta-footer-logo {
+        margin-bottom: 30px;
+    }
+    .shta-site-footer-bottom::before {
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    }
+    .shta-footer-bottom-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .shta-footer-bottom-contact {
+        width: 210px;
+    }
+    .shta-footer-bottom-contact img {
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .shta-footer-bottom-title {
+        font-size: 16px;
+    }
+    .shta-site-footer-info__inner {
+        flex-direction: column-reverse;
+    }
+    .shta-footer-social-list {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .shta-landing-content .shta-section-subtitle,
+    .shta-landing-slide-content .shta-section-title {
+        font-size: 20px;
+        line-height: 20px;
+        width: 100%;
+    }
+    .shat-partner-img img {
+        width: 60px;
+        height: 60px;
+    }
+    .shat-partner-name {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .shat-partner-designation {
+        font-size: 11px;
+        line-height: 11px;
+    }
+    .shat-partner-description {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .shat-partner-sign {
+        position: static;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .shta-landing-btn {
+        margin-left: 0;
+    }
+    .shta-section-title {
+        line-height: 1;
+        font-size: 15px;
+    }
+    .shta-section-description {
+        font-size: 15px;
+        line-height: 1;
+    }
+    .shta-look-great-content .shta-section-description,
+    .shta-last-project-content .shta-section-description {
+        line-height: 1.3;
+        font-size: 16px;
+    }
+    .shta-last-project-section {
+        padding-bottom: 320px;
+    }
+    .shta-last-project-content .shta-section-description {
+        margin-bottom: 40px;
+    }
+    .shta-last-project-img {
+        width: calc(100% - 50px);
+    }
+    .shta-look-great-content .shta-section-title {
+        font-size: 15px;
+        line-height: 1;
+        margin-bottom: 70px;
+        margin-top: 35px;
+    }
+    .shta-team-winner-section .shta-section-description {
+        line-height: 1.3;
+        font-size: 15px;
+    }
+    .shta-came-far-section .shta-section-description {
+        line-height: 1.3;
+        font-size: 15px;
+    }
+    .shta-comapany-work-card.text-center {
+        margin-bottom: 100px;
+    }
+    .shta-comapany-work {
+        padding: 100px 0 0;
+    }
+    .shta-awesome-client-content .shta-section-title {
+        color: #20232f;
+        margin-bottom: 30px;
+    }
+    .shta-testimonial-description {
+        padding: 0 70px;
+    }
+    .shta-make-something-content .shta-section-title {
+        margin-bottom: 30px;
+    }
+    .shta-site-footer-top::before {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .shta-site-footer-top {
+        padding-top: 150px;
+    }
+    .shta-footer-description {
+        margin-bottom: 30px;
+    }
+    .shta-site-footer-bottom {
+        padding-top: 70px;
+    }
+    .shta-footer-bottom-contact {
+        width: 100%;
     }
 }
 
